@@ -5,9 +5,13 @@ Home: https://pypi.org/project/django-rosetta
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-rosetta-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Django application that eases the translation of Django projects
+
+Development: https://github.com/mbi/django-rosetta/
+
+Documentation: http://django-rosetta.readthedocs.org/
 
 Rosetta is a Django application that eases the translation process of your Django projects.
 Because it doesn't export any models, Rosetta doesn't create any tables in your project's database.
@@ -112,9 +116,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
