@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - six >=1.2.0
     - django >=1.11
     - requests >=2.1.0
