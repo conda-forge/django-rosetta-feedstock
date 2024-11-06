@@ -1,5 +1,5 @@
 {% set name = "django-rosetta" %}
-{% set version = "0.9.9" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 776ac03f43974ea780ca25e7d805862b06c8ede4698f999c771a5ed78da4b87f
+  sha256: e0380c456e807b5954afaa54ed43c1dbaf29a2af8dd773ec332c8c2fe5465418
 
 build:
   noarch: python
