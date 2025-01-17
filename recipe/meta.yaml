@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 776ac03f43974ea780ca25e7d805862b06c8ede4698f999c771a5ed78da4b87f
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - six >=1.2.0
     - django >=1.11
     - requests >=2.1.0
     - polib >=1.1.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - rosetta
 
